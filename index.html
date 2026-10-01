@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#040713" />
+  <title>Galaxia Hot Wheels ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="stars"></canvas>
+
+  <div class="nebula nebula-a"></div>
+  <div class="nebula nebula-b"></div>
+
+  <header class="hero">
+    <div class="badge">🚗 UNA GALAXIA HECHA PARA TI</div>
+    <h1>Feliz <span>30 de septiembre</span> ✨</h1>
+    <p class="subtitle">Hoy el universo acelera un poquito más bonito porque existes tú.</p>
+
+    <div class="hero-actions">
+      <button id="startBtn" class="btn primary">Entrar a la galaxia</button>
+      <button id="musicBtn" class="btn glass" aria-pressed="false">♫ Música: off</button>
+    </div>
+
+    <div class="scroll-hint">desliza para descubrir ↓</div>
+  </header>
+
+  <main>
+    <section class="orbit-section">
+      <div class="planet-wrap">
+        <div class="rings"></div>
+        <div class="planet">
+          <div class="planet-glow"></div>
+          <div class="planet-copy">
+            <div class="car-icon">🚘</div>
+            <h2>Contigo todo lugar<br>se siente especial</h2>
+            <p>Hasta lo simple brilla cuando estás cerca.</p>
+          </div>
+        </div>
+        <div class="orbit orbit-1"><div class="mini-car">🏎️</div></div>
+        <div class="orbit orbit-2"><div class="mini-car">🚙</div></div>
+      </div>
+    </section>
+
+    <section class="messages">
+      <div class="section-kicker">MENSAJES EN ÓRBITA</div>
+      <h2>Pequeñas cosas que quiero que recuerdes</h2>
+
+      <div class="cards">
+        <article class="card">
+          <div class="icon">💙</div>
+          <h3>Me alegra conocerte</h3>
+          <p>Hay personas que llegan sin avisar y terminan haciendo los días mucho más bonitos.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">🌠</div>
+          <h3>Eres única</h3>
+          <p>No necesito una fecha especial para recordarte cuánto vales. Hoy solo quería hacerlo más grande.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">🏁</div>
+          <h3>Sin freno</h3>
+          <p>Que nunca te falten motivos para sonreír, avanzar y acelerar hacia todo lo bueno que viene.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">✨</div>
+          <h3>Gracias por ser tú</h3>
+          <p>Por tu forma de ser, por tu risa, por tu presencia y por convertir momentos normales en recuerdos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="road-section">
+      <div class="road-copy">
+        <div class="section-kicker">SIGUIENTE PARADA</div>
+        <h2>Más momentos juntos.</h2>
+        <p>Que esta nueva vuelta al sol venga con aventuras, risas, sueños cumplidos y muchos kilómetros de recuerdos.</p>
+      </div>
+
+      <div class="road" aria-hidden="true">
+        <div class="lane lane1"></div>
+        <div class="lane lane2"></div>
+        <div class="moving-car">🏎️</div>
+      </div>
+    </section>
+
+    <section class="finale">
+      <div class="final-card">
+        <div class="spark">✦</div>
+        <p class="small">PARA TI</p>
+        <h2>Feliz día 💫</h2>
+        <p>Que hoy te recuerde algo muy simple: eres importante, eres especial y mereces cosas bonitas.</p>
+        <button id="surpriseBtn" class="btn primary">Abrir sorpresa</button>
+        <div id="secret" class="secret" hidden>
+          <div class="big-emoji">🌌🚗💙</div>
+          <p>“Apareces cuando más hace falta.”</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>Hecho con cariño · Hot Wheels Galaxy Edition</footer>
+
+  <audio id="bgMusic" loop preload="none">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
